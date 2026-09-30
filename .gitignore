@@ -1,0 +1,57 @@
+# Python caches and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+
+# Local environments and editor files
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Dataset images are external; keep data/*.py tracked.
+/data/datasets/
+/dataset/
+/datasets/
+
+# Generated runs, logs, and caches
+/checkpoints/
+/runs/
+/logs/
+/outputs/
+/output/
+/experiment_outputs/
+/model_cache/
+/pretrained/
+/wheels/
+/robustness_results*/
+/visualization_outputs*/
+/fig5_*_outputs/
+/results/raw/
+/results/tmp/
+*.log
+events.out.tfevents.*
+
+# Large binary artifacts
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.whl
+*.tar
+*.tar.gz
+*.zip
+
+# Full local environment snapshot; keep curated requirements.txt.
+/requirements.freeze.txt
